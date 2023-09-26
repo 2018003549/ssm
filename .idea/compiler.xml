@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring_helloworld" />
+        <module name="springMvc-demo" />
+        <module name="mybatis_helloworld" />
+        <module name="spring_listener" />
+        <module name="springmvc_annotation" />
+        <module name="ssm" />
+        <module name="springMvc_hello" />
+        <module name="mybaits_resultMap" />
+        <module name="mybaits_dynamicSql" />
+        <module name="springmvc_rest" />
+        <module name="mybatis_parameter" />
+        <module name="springmvc_extension" />
+        <module name="mybatis_mbg" />
+        <module name="spring-jdbcTemplate" />
+        <module name="spring-aop" />
+        <module name="mybatis_cache" />
+        <module name="springmvc_ajax" />
+        <module name="spring_ioc_xml" />
+        <module name="spring_ioc_annotation" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chyHomework" target="8" />
+      <module name="linHomework" target="6" />
+      <module name="mybaits_dynamicSql" target="8" />
+      <module name="mybaits_resultMap" target="8" />
+      <module name="Mybatis-annotation" target="8" />
+      <module name="mybatis_cache" target="8" />
+      <module name="mybatis_helloworld" target="8" />
+      <module name="mybatis_mbg" target="8" />
+      <module name="mybatis_parameter" target="8" />
+      <module name="mybatisHomework" target="8" />
+      <module name="MybatisHomework-annotation" target="8" />
+      <module name="spring-aop" target="8" />
+      <module name="spring-jdbcTemplate" target="8" />
+      <module name="spring_aop" target="8" />
+      <module name="spring_helloworld" target="8" />
+      <module name="spring_ioc" target="8" />
+      <module name="spring_ioc_annotation" target="8" />
+      <module name="spring_ioc_xml" target="8" />
+      <module name="spring_JdbcTemplate" target="8" />
+      <module name="spring_listener" target="8" />
+      <module name="spring_mvc_hello" target="1.7" />
+      <module name="springmvc" target="8" />
+      <module name="springMvc-demo" target="8" />
+      <module name="springmvc_ajax" target="8" />
+      <module name="springmvc_annotation" target="8" />
+      <module name="springmvc_extension" target="8" />
+      <module name="springMvc_hello" target="8" />
+      <module name="springMvc_rest" target="8" />
+      <module name="springmvc_rest" target="8" />
+      <module name="ssm" target="8" />
+      <module name="untitled" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

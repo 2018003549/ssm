@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../javaeeHomeWork/mybatisHomework/spring_mvc_hello" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/spring_listener" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/springMvc-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/springmvc_ajax" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/springmvc_annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/springmvc_extension" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/springMvc_hello" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/springmvc_rest" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc_rest" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/mybatis_helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_parameter/pom.xml" />
+        <option value="$PROJECT_DIR$/mybaits_resultMap/pom.xml" />
+        <option value="$PROJECT_DIR$/mybaits_dynamicSql/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_cache/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_mbg/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_ioc_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_ioc_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/../mybatisHomework/pom.xml" />
+        <option value="$PROJECT_DIR$/../chyHomework/pom.xml" />
+        <option value="$PROJECT_DIR$/../Mybatis-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/../springMvc-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_rest/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_JdbcTemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jdbcTemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc/springmvc_rest/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc/springMvc_hello/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc/springmvc_extension/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc/springMvc-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc/springmvc_ajax/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../mybatisHomework/spring_mvc_hello/pom.xml" />
+        <option value="$PROJECT_DIR$/../springMvc-demo/springMvc_rest/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

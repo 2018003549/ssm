@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.EmpMapper">
+    <resultMap id="empMap" type="emp">
+        <id column="emp_id" property="empID"></id>
+        <result column="emp_name" property="empName"></result>
+    </resultMap>
+    <sql id="empSql">
+        emp_id,emp_name,age,gender
+    </sql>
+    <select id="getEmpByCondition" resultMap="empMap">
+        select <include refid="empSql"/> from t_emp
+        <trim prefix="where" suffixOverrides="and" prefixOverrides="and">
+            <if test="age!='' &amp;&amp; age!=null">and age=#{age} and</if>
+            <if test="gender!='' and gender!=null"> gender=#{gender} and</if>
+            <if test="empName!='' and empName!=null"> emp_name=#{empName}</if>
+        </trim>
+    </select>
+    <select id="getEmpByChoose" resultMap="empMap">
+        select * from t_emp
+       <where>
+       <choose>
+            <when test="age!='' &amp;&amp; age!=null"> age=#{age} </when>
+            <when test="gender!='' and gender!=null"> gender=#{gender} </when>
+            <when test="empName!='' and empName!=null"> emp_name=#{empName}</when>
+            <otherwise>emp_id=2</otherwise>
+       </choose>
+       </where>
+    </select>
+
+    <insert id="insertMore">
+        insert into t_emp values
+        <foreach collection="emps" item="emp" separator=",">
+            (null,#{emp.empName},#{emp.age},#{emp.gender},null)
+        </foreach>
+    </insert>
+
+    <delete id="deleteMore">
+        delete from t_emp 
+        where emp_id in <foreach collection="ids" item="id" open="(" close=")" separator=",">
+        #{id}
+    </foreach>
+    </delete>
+</mapper>

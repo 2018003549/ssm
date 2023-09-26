@@ -1,0 +1,17 @@
+# Project exclude paths
+/mybaits_dynamicSql/target/
+/mybaits_resultMap/target/
+/mybatis_cache/target/
+/mybatis_helloworld/target/
+/mybatis_mbg/target/
+/mybatis_parameter/target/
+/spring-jdbcTemplate/target/
+/spring_ioc_xml/target/
+/springmvc/spring_listener/target/
+/springmvc/springMvc-demo/target/
+/springmvc/springmvc_ajax/target/
+/springmvc/springmvc_annotation/target/
+/springmvc/springmvc_extension/target/
+/springmvc/springMvc_hello/target/
+/springmvc/springmvc_rest/target/
+/springmvc/ssm/target/

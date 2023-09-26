@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello</h1>
+<a th:href="@{/abc?username=admin}">abc请求</a>
+<a th:href="@{/hello(username='admin')}">hello请求</a>
+<form method="post" th:action="@{/abc}">
+    <input type="text">
+    <input type="submit" value="发送post请求">
+</form>
+<a th:href="@{/test/rest/1/张三}">测试占位符</a>
+<hr>
+<form method="post" th:action="@{/Param}">
+    <input type="text" name="username">
+    <input type="submit" value="发送post请求">
+</form>
+<form method="post" th:action="@{/pojoParam}">
+    用户名：<input type="text" name="userName">
+    密码：<input type="password" name="passWord">
+    <input type="submit" value="发送post请求">
+</form>
+<hr>
+<a th:href="@{test/mav}">测试modelAndView</a>
+<a th:href="@{test/model}">测试model</a>
+<a th:href="@{test/modelMap}">测试modelMap</a>
+<a th:href="@{test/map}">测试map</a>
+<hr>
+<a th:href="@{test/session}">向会话域</a>
+<a th:href="@{test/application}">向应用域</a>
+<hr>
+springMvc的视图
+<a th:href="@{view/forward}">转发视图</a><br>
+<a th:href="@{view/redirect}">重定向视图</a>
+</body>
+</html>

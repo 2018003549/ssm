@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.EmpMapper">
+    <resultMap id="empResult" type="Emp">
+        <id column="emp_id" property="empID"></id>
+        <result column="emp_name" property="empName"></result>
+    </resultMap>
+    <resultMap id="edMapOne" type="Emp">
+        <id column="emp_id" property="empID"></id>
+        <result column="emp_name" property="empName"></result>
+<!--        级联处理-->
+        <result column="dept_id" property="dept.deptId"></result>
+        <result column="dept_name" property="dept.deptName"></result>
+    </resultMap>
+
+    <resultMap id="edMap" type="Emp">
+        <id column="emp_id" property="empID"></id>
+        <result column="emp_name" property="empName"></result>
+        <association property="dept" javaType="Dept">
+            <id column="dept_id" property="deptId"></id>
+            <result column="dept_name" property="deptName"></result>
+        </association>
+    </resultMap>
+    <!--分步查询-->
+    <resultMap id="edStepMap" type="Emp">
+        <id column="emp_id" property="empID"></id>
+        <result column="emp_name" property="empName"></result>
+        <association property="dept" select="mapper.DeptMapper.selectEmpAndDeptStep2" column="dept_id"
+        fetchType="eager">
+        </association>
+    </resultMap>
+    <select id="selectByID" resultMap="empResult">
+        select * from t_emp where emp_id=#{empId}
+    </select>
+
+    <select id="selectEmpAndDept" resultMap="edMap">
+        select e.*,d.*
+        from t_emp e left join t_dept d
+        on d.dept_id=e.dept_id
+        where e.emp_id=#{ID}
+    </select>
+
+
+    <select id="selectEmpAndDeptStep1" resultMap="edStepMap">
+        /*分步查询*/
+        select * from t_emp where emp_id=#{ID}
+    </select>
+
+    <select id="selectDeptAndEmpStep2" resultMap="empResult">
+        select * from t_emp where dept_id=#{deptId}
+    </select>
+</mapper>

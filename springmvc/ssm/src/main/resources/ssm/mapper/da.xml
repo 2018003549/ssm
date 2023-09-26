@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gduf.gms_ex.mapper.CourseMapper">
+    <select id="findCourses" resultType="Course">
+        select * from course
+    </select>
+    <select id="findCourse" parameterType="String" resultType="Course" >
+        select * from course where cno=#{cno};
+    </select>
+    <insert id="addCourse" parameterType="Course">
+        insert into course(cno,cname,period) values(#{cno},#{cname},#{period});
+    </insert>
+    <update id="updateCourse" parameterType="Course">
+        update course set cname=#{cname},period=#{period}where cno=#{cno};
+    </update>
+    <delete id="deleteCourse" parameterType="String">
+        delete from course where cno=#{cno};
+    </delete>
+</mapper>
